@@ -3,46 +3,91 @@ body{
     color: white;
     font-family: fantasy;
     font-weight: 400;
-    margin: 0 40px 0 20px;
+    margin: 10px 40px 0 20px;
     padding: auto 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,102,121,0.9598433123249299) 0%, rgba(13,233,211,1) 100%);
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,102,121,0.9598433123249299) 0%, rgba(13,233,211,1) 100%); */
+    background-image: url("images/london-bridge.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    align-content: center;
+    flex-wrap: wrap; */
 }
 
 #hero{
-    background-image: url("images/london-bridge.jpg");
-    background-size: cover;
-    padding: 10px 0 40px 0;
+    padding: 10px 0 40px 0; 
+    font-size: 20px;
+    color: rgb(196, 190, 190); 
+    text-shadow: 0px 0px 4px rgb(24, 23, 23);
 }
 
 
-
-
+    
 #title {
+    color: rgb(221, 192, 47);
     text-shadow: 0px 0px 4px black;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 
 #intro {
     text-shadow: 0px 0px 4px black;
+   
 }
 
- h2, h3{
+ h2, h3, p{
     text-shadow: 0px 0px 4px black;
     font-size: 30px;
 }
+
+h2, h3 {
+    color: rgb(221, 192, 47);
+}
+
+.extra-info{
+    font-size: small;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
+
+a:link {
+    color: rgb(237, 228, 228);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(195, 236, 13);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
 .description{
     text-shadow: 0px 0px 4px black;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
 
 }
 
 .img {
+   
     margin: 10px auto;
-    width: 600px;
-    height: 400px;
-    border-radius: 10px;
+    width: 300px;
+    height: 300px;
     background-size: cover;
+    border-radius: 50%;
+    border: 6px solid rgb(107, 91, 91);
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -76,9 +121,10 @@ input[type=text], select, textarea {
   }
   
   /* Add a background color and some padding around the form */
-  .container {
+  .form {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    margin-bottom: 40px;
    
   }
